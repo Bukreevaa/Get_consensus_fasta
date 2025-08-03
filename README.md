@@ -30,7 +30,7 @@ This script combines three main steps:
 ```bash
 python get_consensus.py --fasta FASTA --vcf VCF [--output OUTPUT] [--fragment_length FRAGMENT_LENGTH] [--num_fragments NUM_FRAGMENTS] [--min_af MIN_AF]
 ```
-
+**Notes:** The program uses default parameters for --fragment_length (-l = 100), --num_fragments (-n = 100), --min_af (-a = 0.01).
 ## Graphical visualization of the program's algorithm
 <pre>
 +--------------------------------------------------+
