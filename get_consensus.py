@@ -273,8 +273,8 @@ def extract_allele_frequencies(info_field: str, num_alt_alleles: int) -> List[fl
 
 def parse_genotype_with_priority(sample_data: str, format_fields: list, ref: str,
                                alt_alleles: list, allele_frequencies: list) -> str:
-    """Parse genotype of sample with priority selection of alleles
-    Note: this function may seem unnecessary given that in the current version of the program, it is used in def apply_all_mutations_from_single_sample_indel for one of the extreme cases; it was created in the early stages of the program's development, when it was assumed that variants would be determined based on frequency rather than phase selection.
+    """
+    Parse genotype of sample with priority selection of alleles
     """
     if sample_data == '.' or sample_data == './.' or sample_data == '.|.':
         return ref
