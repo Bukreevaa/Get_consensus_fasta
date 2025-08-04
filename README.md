@@ -10,9 +10,8 @@ This script combines three main steps:
 
 ## Features
 
-*   **Phase Preservation (Haplotype):** When applying mutations for the selected sample, the script attempts to preserve phase. It finds the first suitable heterozygous mutation and selects one "side" of the genotype (e.g., for `0/1`, either `0` or `1` is chosen). The same "side" is used for all subsequent mutations in that fragment from the same sample.
-*   **Fallback Allele Selection Mechanism:** If the initial mutations are homozygous or have missing data (`.`), a fallback method (`parse_genotype_with_priority`) is used, which selects an allele based on frequency or priority.
 *   **FASTA Indexing:** An index file (`<fasta_file>.idx`) is created and used for faster sequence access.
+*   **Phase Preservation (Haplotype):** When applying mutations for the selected sample, the script attempts to preserve phase. It finds the first suitable heterozygous mutation and selects one "side" of the genotype (e.g., for `0/1`, either `0` or `1` is chosen). The same "side" is used for all subsequent mutations in that fragment from the same sample.
 *   **Allele Frequency Handling:** If the `AF` field is missing in the VCF, the frequency is calculated based on sample genotypes (`GT`).
 
 ## Dependencies
